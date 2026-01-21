@@ -1,4 +1,4 @@
-# Alerting Gotchas
+# Alerting Playground
 
 Grafana Alloy setup with Fleet Management configuration.
 
