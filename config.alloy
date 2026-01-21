@@ -1,0 +1,15 @@
+remotecfg {
+  id  = coalesce(sys.env("GCLOUD_FM_COLLECTOR_ID"), constants.hostname)
+  url = sys.env("GCLOUD_FM_URL")
+  basic_auth {
+    username = sys.env("GCLOUD_FM_USERNAME")
+    password = sys.env("GCLOUD_FM_PASSWORD")
+  }
+  poll_frequency = "5m"
+  attributes     = {
+    "team.name"       = coalesce(sys.env("TEAM"), "Databases"), 
+    "deployment.environment.name" = coalesce(sys.env("ENVIRONMENT"), "prod"),
+    "service.namespace" = "saleorg",
+    "platform" = "macbook", //kubernetes, docker, gcp, aws, azure
+  }
+}

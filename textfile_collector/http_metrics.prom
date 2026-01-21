@@ -1,0 +1,45 @@
+# HELP http_requests_total Total number of HTTP requests
+# TYPE http_requests_total counter
+http_requests_total{service_name="api-gateway",region="us-east-1",hostname="api-gw-01",http_code="200",http_method="GET"} 15234
+http_requests_total{service_name="api-gateway",region="us-east-1",hostname="api-gw-01",http_code="200",http_method="POST"} 8921
+http_requests_total{service_name="api-gateway",region="us-east-1",hostname="api-gw-01",http_code="201",http_method="POST"} 4512
+http_requests_total{service_name="api-gateway",region="us-east-1",hostname="api-gw-01",http_code="400",http_method="POST"} 234
+http_requests_total{service_name="api-gateway",region="us-east-1",hostname="api-gw-01",http_code="404",http_method="GET"} 89
+http_requests_total{service_name="api-gateway",region="us-east-1",hostname="api-gw-01",http_code="500",http_method="GET"} 660
+http_requests_total{service_name="api-gateway",region="us-east-1",hostname="api-gw-01",http_code="500",http_method="POST"} 449
+
+http_requests_total{service_name="api-gateway",region="eu-west-1",hostname="api-gw-02",http_code="200",http_method="GET"} 12456
+http_requests_total{service_name="api-gateway",region="eu-west-1",hostname="api-gw-02",http_code="200",http_method="POST"} 6734
+http_requests_total{service_name="api-gateway",region="eu-west-1",hostname="api-gw-02",http_code="201",http_method="POST"} 3211
+http_requests_total{service_name="api-gateway",region="eu-west-1",hostname="api-gw-02",http_code="400",http_method="POST"} 156
+http_requests_total{service_name="api-gateway",region="eu-west-1",hostname="api-gw-02",http_code="404",http_method="GET"} 67
+http_requests_total{service_name="api-gateway",region="eu-west-1",hostname="api-gw-02",http_code="500",http_method="GET"} 500
+http_requests_total{service_name="api-gateway",region="eu-west-1",hostname="api-gw-02",http_code="500",http_method="POST"} 500
+
+http_requests_total{service_name="user-service",region="us-east-1",hostname="user-svc-01",http_code="200",http_method="GET"} 9876
+http_requests_total{service_name="user-service",region="us-east-1",hostname="user-svc-01",http_code="200",http_method="PUT"} 2341
+http_requests_total{service_name="user-service",region="us-east-1",hostname="user-svc-01",http_code="201",http_method="POST"} 1823
+http_requests_total{service_name="user-service",region="us-east-1",hostname="user-svc-01",http_code="204",http_method="DELETE"} 456
+http_requests_total{service_name="user-service",region="us-east-1",hostname="user-svc-01",http_code="401",http_method="GET"} 123
+http_requests_total{service_name="user-service",region="us-east-1",hostname="user-svc-01",http_code="403",http_method="DELETE"} 34
+http_requests_total{service_name="user-service",region="us-east-1",hostname="user-svc-01",http_code="500",http_method="POST"} 55
+
+http_requests_total{service_name="user-service",region="ap-southeast-1",hostname="user-svc-02",http_code="200",http_method="GET"} 7654
+http_requests_total{service_name="user-service",region="ap-southeast-1",hostname="user-svc-02",http_code="200",http_method="PUT"} 1876
+http_requests_total{service_name="user-service",region="ap-southeast-1",hostname="user-svc-02",http_code="201",http_method="POST"} 1234
+http_requests_total{service_name="user-service",region="ap-southeast-1",hostname="user-svc-02",http_code="204",http_method="DELETE"} 321
+http_requests_total{service_name="user-service",region="ap-southeast-1",hostname="user-svc-02",http_code="401",http_method="GET"} 89
+http_requests_total{service_name="user-service",region="ap-southeast-1",hostname="user-svc-02",http_code="500",http_method="GET"} 66
+
+http_requests_total{service_name="payment-service",region="us-west-2",hostname="payment-01",http_code="200",http_method="POST"} 5432
+http_requests_total{service_name="payment-service",region="us-west-2",hostname="payment-01",http_code="201",http_method="POST"} 4321
+http_requests_total{service_name="payment-service",region="us-west-2",hostname="payment-01",http_code="400",http_method="POST"} 234
+http_requests_total{service_name="payment-service",region="us-west-2",hostname="payment-01",http_code="402",http_method="POST"} 89
+http_requests_total{service_name="payment-service",region="us-west-2",hostname="payment-01",http_code="500",http_method="POST"} 11
+http_requests_total{service_name="payment-service",region="us-west-2",hostname="payment-01",http_code="503",http_method="POST"}77
+
+http_requests_total{service_name="payment-service",region="eu-west-1",hostname="payment-02",http_code="200",http_method="POST"} 4123
+http_requests_total{service_name="payment-service",region="eu-west-1",hostname="payment-02",http_code="201",http_method="POST"} 3456
+http_requests_total{service_name="payment-service",region="eu-west-1",hostname="payment-02",http_code="400",http_method="POST"} 178
+http_requests_total{service_name="payment-service",region="eu-west-1",hostname="payment-02",http_code="500",http_method="POST"} 9
+http_requests_total{service_name="payment-service",region="eu-west-1",hostname="payment-02",http_code="504",http_method="POST"} 77
